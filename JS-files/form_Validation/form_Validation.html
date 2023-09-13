@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form name="login_form">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td><input id="user_name" oninput="formValidation();" type="text" name="u_name" placeholder=""></td>
+                <td id="nameAlert"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input id="user_pass" oninput="passValidation();" type="password" name="u_pass" placeholder=""></td>
+                <td id="passAlert"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="u_login"></td>
+            </tr>
+        </table>
+        
+    </form>
+</body>
+
+<script src="JSfiles/25.Validation-Form.js">
+</script>
+</html>
