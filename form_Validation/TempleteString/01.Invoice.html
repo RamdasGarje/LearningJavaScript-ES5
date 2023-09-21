@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templete String</title>
+</head>
+<body>
+    <h1>Templete String</h1>
+
+</body>
+<script>
+    function invoice(firstName, subscription)
+    {
+        var gst = 48;
+        console.log(
+            `Hi ${firstName}, Thank you for subscribing prime videos.
+                                        total: $${subscription}
+                                        GST  : $${gst}
+                                        Grant Total: $${subscription + gst}`
+        )
+    }
+    invoice("Ram", 398);
+</script>
+</html>
