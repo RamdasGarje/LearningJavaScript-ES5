@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <h2>Spread Operator</h2>
+</body>
+
+<script>
+    var courseName = ("Web Development");
+    var module = ["Fronend", "Backend"];
+    var frontEnd = ["HTML", "CSS", "JavaScript"];
+    var backEnd = ["Java", "Python", "PHP"];
+    // Using Spread Operator
+    var courseTopics = [...frontEnd, ...backEnd];
+
+
+    function webDev()
+    {
+        console.log(
+            // Using Templete String
+            `welcome to web Development Course.
+            Cousre Name:- ${courseName}
+            Course Module:- ${module}
+            Course Topics:- ${courseTopics}`
+                )
+    }
+    webDev();
+</script>
+</html>
